@@ -1,0 +1,21 @@
+[project]
+name = "realtime-saas-analytics-pipeline"
+version = "0.1.0"
+description = "Real-time SaaS Analytics Pipeline"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+dependencies = [
+    # FastAPI Producer (runs locally)
+    "fastapi==0.115.12",
+    "uvicorn==0.34.0",
+    "confluent-kafka==2.3.0",
+    "fastavro==1.9.7",
+    "faker==37.1.0",
+    "python-dotenv==1.1.0",
+    "loguru==0.7.3",
+    "httpx==0.28.1",
+    "email-validator==2.2.0",
+    "requests==2.32.3",
+    "authlib>=1.3.0",
+]
