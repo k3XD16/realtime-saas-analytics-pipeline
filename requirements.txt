@@ -1,0 +1,9 @@
+apache-airflow==3.2.1
+apache-airflow-providers-databricks
+apache-airflow-providers-snowflake
+apache-airflow-providers-amazon
+python-dotenv==1.0.1
+loguru==0.7.2
+requests>=2.32.0
+pandas>=2.2.0
+sqlalchemy>=2.0.0
