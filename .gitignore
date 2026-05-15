@@ -205,3 +205,37 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# Airflow
+airflow/logs/
+airflow/.env
+airflow/logs/**
+.airflowignore
+
+# Environment & Secrets (never commit)
+.env
+.env.*
+!.env.example
+
+# Databricks notebook outputs (execution results)
+**/.ipynb_checkpoints/
+databricks/**/.ipynb_checkpoints/
+
+# Docker
+airflow/logs/
+postgres-db-volume/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# VS Code workspace settings (optional — uncomment if team uses same settings)
+# .vscode/
+
+# Airflow DB / internal files
+airflow.db
+airflow/airflow.db
+standalone_admin_password.txt
+
+
