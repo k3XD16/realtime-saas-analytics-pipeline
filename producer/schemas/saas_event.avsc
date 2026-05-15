@@ -1,0 +1,48 @@
+{
+  "type": "record",
+  "name": "SaaSEvent",
+  "namespace": "com.saas.analytics",
+  "fields": [
+    {"name": "event_id", "type": "string"},
+    {"name": "event_type", "type": "string"},
+    {"name": "timestamp", "type": "string"},
+    {"name": "session_id", "type": ["null", "string"], "default": null},
+    {"name": "user_id", "type": ["null", "string"], "default": null},
+    {"name": "anonymous_id", "type": ["null", "string"], "default": null},
+    {
+      "name": "properties",
+      "type": {
+        "type": "record",
+        "name": "EventProperties",
+        "fields": [
+          {"name": "page", "type": ["null", "string"], "default": null},
+          {"name": "referrer", "type": ["null", "string"], "default": null},
+          {"name": "utm_source", "type": ["null", "string"], "default": null},
+          {"name": "utm_medium", "type": ["null", "string"], "default": null},
+          {"name": "utm_campaign", "type": ["null", "string"], "default": null},
+          {"name": "device", "type": ["null", "string"], "default": null},
+          {"name": "browser", "type": ["null", "string"], "default": null},
+          {"name": "os", "type": ["null", "string"], "default": null},
+          {"name": "country", "type": ["null", "string"], "default": null},
+          {"name": "city", "type": ["null", "string"], "default": null},
+          {"name": "plan", "type": ["null", "string"], "default": null},
+          {"name": "signup_method", "type": ["null", "string"], "default": null},
+          {"name": "referral_source", "type": ["null", "string"], "default": null},
+          {"name": "login_method", "type": ["null", "string"], "default": null},
+          {"name": "session_number", "type": ["null", "int"], "default": null},
+          {"name": "feature_name", "type": ["null", "string"], "default": null},
+          {"name": "duration_seconds", "type": ["null", "int"], "default": null},
+          {"name": "actions_taken", "type": ["null", "int"], "default": null},
+          {"name": "from_plan", "type": ["null", "string"], "default": null},
+          {"name": "to_plan", "type": ["null", "string"], "default": null},
+          {"name": "mrr_usd", "type": ["null", "double"], "default": null},
+          {"name": "payment_method", "type": ["null", "string"], "default": null},
+          {"name": "billing_cycle", "type": ["null", "string"], "default": null},
+          {"name": "reason", "type": ["null", "string"], "default": null},
+          {"name": "days_active", "type": ["null", "int"], "default": null},
+          {"name": "mrr_lost_usd", "type": ["null", "double"], "default": null}
+        ]
+      }
+    }
+  ]
+}
